@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riego Site</title>
+    <style>
+        * {
+         box-sizing: border-box;
+        }
+        body {
+         background-color: #595959;
+         text-align: center;
+        }
+        .header {
+         background-image: url("header.png");
+         background-repeat: no-repeat;
+         background-position: center top;
+         background-color: #383838;
+        }
+        .body {
+         background-color: #323232;
+         padding: 0.25rem 4rem;
+         display:inline-block;
+        }
+        .title {
+         padding-top: 1.25rem;
+        }
+        .button {
+          background-color: #dba212;
+          color: black;
+          padding: 0.25rem 4rem;
+          text-align: center;
+          display: inline-block;
+          cursor: pointer;
+        }
+        .button:hover {
+          background-color: #b58f2d;
+        }
+        h1 {
+         color: #f0c454;
+        }
+        h2, h3 {
+         color: #b98c18;
+        }
+        .game{
+         height:630px;width:1010px
+        }
+<!--        @media only screen and (max-width: 600px) {
+         .header {
+
+         }
+         .body{
+          padding: 0.25rem 1rem;
+         }
+        }-->
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+    <div class="title">
+        <h1 style="font-size:64px">Riego Site</h1>
+    </div>
+    <hr>
+    <div class="button">
+        <p>Home</p>
+    </div>
+    <div class="button">
+        <p>Play</p>
+    </div>
+    <div class="button">
+        <p>Gallery</p>
+    </div>
+    <div class="button">
+        <p>About</p>
+    </div>
+    <hr>
+</div>
+
+<div class="body">
+    <h1>Lockdown at Lilac</h1>
+    <iframe src="https://azuregitter.github.io/Lilac/" class="game"></iframe>
+    <h2>Keyboard Controls: | Enter - Confirm | X - Cancel | Shift - Run |</h2>
+    <h2>Mobile Controls: | Touch - Confirm | Two Finger Touch - Cancel |</h2>
+</div>
+
+
+</body>
+</html>
