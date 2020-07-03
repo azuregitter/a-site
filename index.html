@@ -17,7 +17,7 @@
         }
         .body {
          background-color: #323232;
-         padding: 0.25rem 4rem;
+         padding: 0.25rem 1rem;
         }
         .title {
          padding-top: 1.25rem;
@@ -60,6 +60,17 @@
           width: 140px;
          }
         }
+        @media only screen and (min-width: 600px) {
+         .mobileOnly{
+          display:none;
+         }
+         .header{
+          min-width: 1040px;
+         }
+         .body{
+          min-width: 1010px;
+         }
+        }
     </style>
 
 </head>
@@ -91,8 +102,11 @@
     <div class="changeOrientation">
         <h1>Change to Landscape</h1>
     </div>
-    <h2>Keyboard Controls: | Enter - Confirm | X - Cancel | Shift - Run |</h2>
-    <h2>Mobile Controls: | Touch - Confirm | Two Finger Touch - Cancel |</h2>
+    <h2>Keyboard Controls: <br> Enter - Confirm |
+        <br class="mobileOnly"> X - Cancel |
+        <br class="mobileOnly"> Shift - Run </h2>
+    <h2>Mobile Controls: <br> Touch - Confirm |
+        <br class="mobileOnly"> Two Finger Touch - Cancel </h2>
 </div>
 
 </body>
