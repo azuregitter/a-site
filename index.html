@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
     <title>Continent of Valia</title>
     <style>
-        * {
-         box-sizing: border-box;
-        }
         body {
          background-color: #595959;
          text-align: center;
@@ -21,18 +18,17 @@
         .body {
          background-color: #323232;
          padding: 0.25rem 4rem;
-         display:inline-block;
         }
         .title {
          padding-top: 1.25rem;
         }
         .button {
           background-color: #dba212;
-          color: black;
-          padding: 0.25rem 4rem;
-          text-align: center;
           display: inline-block;
           cursor: pointer;
+          border: 1px solid #665528;
+          width: 220px;
+          margin-top: 5px;
         }
         .button:hover {
           background-color: #b58f2d;
@@ -44,7 +40,22 @@
          color: #b98c18;
         }
         .game{
-         height:630px;width:1010px
+         height:630px;width:1010px;
+        }
+        .changeOrientation{
+         display:none;
+        }
+        @media only screen and (max-width: 600px) {
+         .game{
+          display:none;
+         }
+         .changeOrientation{
+          display: block;
+          background-color: #000000;
+          padding-top: 20vh;
+          padding-bottom: 20vh;
+          text-color: #ffffff;
+         }
         }
     </style>
 
@@ -70,13 +81,16 @@
     </div>
     <hr>
 </div>
+
 <div class="body">
     <h1>Lockdown at Lilac</h1>
     <iframe src="https://azuregitter.github.io/Lilac/" class="game"></iframe>
+    <div class="changeOrientation">
+        <h1>Change to Landscape</h1>
+    </div>
     <h2>Keyboard Controls: | Enter - Confirm | X - Cancel | Shift - Run |</h2>
     <h2>Mobile Controls: | Touch - Confirm | Two Finger Touch - Cancel |</h2>
 </div>
-
 
 </body>
 </html>
